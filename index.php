@@ -49,8 +49,10 @@
 				$image_url = str_replace( 'project-info/', 'project-photos/', str_replace( '.txt', '.jpg', $file ) );
 				?>
 				<div class="third">
-					<a href="<?php print $image_url; ?>"><img src="<?php print $image_url; ?>">
-					<?php print file_get_contents( $file ); ?></a>
+					<a href="<?php print $image_url; ?>">
+						<div class="project-photo"><img src="<?php print $image_url; ?>"></div>
+						<?php print file_get_contents( $file ); ?>
+					</a>
 				</div>
 				<?php
 			}
