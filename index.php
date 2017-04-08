@@ -45,16 +45,24 @@
 				<h2>See The Projects</h2>
 			</div>
 			<?php
+			$files = array();
 			foreach ( glob( 'project-info/*.txt' ) as $file ) {
-				$image_url = str_replace( 'project-info/', 'project-photos/', str_replace( '.txt', '.jpg', $file ) );
-				?>
-				<div class="third">
-					<a href="<?php print $image_url; ?>">
-						<div class="project-photo"><img src="<?php print $image_url; ?>"></div>
-						<?php print file_get_contents( $file ); ?>
-					</a>
-				</div>
-				<?php
+				$files[] = $file;
+			}
+			if ( !empty( $files ) ) {
+				foreach ( $files as $file ) {
+					$image_url = str_replace( 'project-info/', 'project-photos/', str_replace( '.txt', '.jpg', $file ) );
+					?>
+			<div class="third">
+				<a href="<?php print $image_url; ?>">
+					<div class="project-photo"><img src="<?php print $image_url; ?>"></div>
+					<?php print file_get_contents( $file ); ?>
+				</a>
+			</div>
+					<?php
+				}
+			} else {
+				print "<p>No projects have been submitted yet. Fill out the form above to submit your project!</p>";
 			}
 			?>
 		</div>
