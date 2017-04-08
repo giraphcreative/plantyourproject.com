@@ -19,6 +19,10 @@ $orange: #EC5946;
 @import "grid";
 
 
+@mixin img-max-width {
+	max-width: 100%;
+}
+
 
 // background-container
 .container {
@@ -40,6 +44,8 @@ $orange: #EC5946;
 	background: $green;
 	color: white;
 	box-shadow: 0 10px 20px rgba( #666, .4 );
+
+	img { @include img-max-width; }
 }
 
 .bg-yellow {
@@ -49,6 +55,7 @@ $orange: #EC5946;
 	img {
 		display: block;
 		margin: 0 auto;
+		@include img-max-width;
 	}
 }
 
@@ -67,6 +74,7 @@ $orange: #EC5946;
 header {
 	img {
 		display: block;
+		@include img-max-width;
 	}
 }
 
@@ -115,7 +123,7 @@ header {
 	@include clearfix;
 	
 	.third {
-		@include respond-to( 768px ) {		
+		@include respond-to( 768px ) {
 			&:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16), &:nth-child(19), &:nth-child(22), &:nth-child(25), &:nth-child(28), &:nth-child(31), &:nth-child(34), &:nth-child(37), &:nth-child(40) {
 				clear: left;
 			}
