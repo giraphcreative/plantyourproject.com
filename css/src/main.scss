@@ -1,0 +1,148 @@
+
+
+// color variables
+$yellow: #FBB040;
+$green: #00A651;
+$grey: #414042;
+$navy: #15345A;
+$orange: #EC5946;
+
+
+@import "reset";
+
+@import "fonts";
+
+@import "mixins";
+
+@import "base";
+
+@import "grid";
+
+
+
+// background-container
+.container {
+	background: white;
+	padding-bottom: 40px;
+	max-width: 1150px;
+	margin: 0 auto;
+	box-shadow: 0 0 30px rgba( #666, .4 );
+
+	@include respond-to( 1220px ) {
+		padding-bottom: 20px;
+	}
+}
+
+
+
+// colors
+.bg-green {
+	background: $green;
+	color: white;
+	box-shadow: 0 10px 20px rgba( #666, .4 );
+}
+
+
+
+// wrap div
+.wrap {
+	max-width: 1150px;
+	margin: 0 auto;
+	position: relative;
+	@include clearfix;
+}
+
+
+
+header {
+	img {
+		display: block;
+	}
+}
+
+
+
+.pad {
+	padding: 20px;
+
+	@include respond-to( 768px ) {
+		padding: 40px 60px;
+	}
+
+	&.no-top {
+		padding-top: 0;
+	}
+}
+
+
+
+.intro {
+	text-align: center;
+
+	h2 {
+		font-size: 2.4em;
+		color: $navy;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
+
+	@include respond-to( 768px ) {
+		padding: 0 100px;
+	}
+
+	@include respond-to( 1024px ) {
+		padding: 0 200px;
+	}
+}
+
+
+
+// footer styles
+.footer-bar {
+	border-top: 10px solid $yellow;
+	color: $grey;
+	padding: 30px 20px;
+
+	h2, h4 {
+		&, a {
+			color: $grey;
+		}
+
+		@include font-title;
+	}
+
+	h2 {
+		font-size: 3em;
+		@include respond-to( 768px ) { font-size: 3.5em; }
+	}
+
+	h4 {
+		font-size: 17px;
+		@include respond-to( 800px ) { font-size: 26px; }
+	}
+
+	.sixty, .fourty {
+		text-align: center;
+	}
+
+	.address {
+		@include font;
+		text-align: left;
+		font-size: .95em;
+		line-height: 1.4em;
+		color: $navy;
+	}
+}
+
+
+
+.fine-print {
+	padding: 40px 0 0;
+	font-size: .8em;
+	line-height: 1.3em;
+	text-align: left;
+}
+
