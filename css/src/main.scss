@@ -110,6 +110,21 @@ header {
 
 
 
+// project styles
+.projects {
+	@include clearfix;
+	
+	.third {
+		@include respond-to( 768px ) {		
+			&:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16), &:nth-child(19), &:nth-child(22), &:nth-child(25), &:nth-child(28), &:nth-child(31), &:nth-child(34), &:nth-child(37), &:nth-child(40) {
+				clear: left;
+			}
+		}
+	}
+}
+
+
+
 // footer styles
 .footer-bar {
 	color: $grey;
