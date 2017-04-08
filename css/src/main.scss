@@ -42,6 +42,16 @@ $orange: #EC5946;
 	box-shadow: 0 10px 20px rgba( #666, .4 );
 }
 
+.bg-yellow {
+	padding: 10px;
+	background: $yellow;
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
 
 
 // wrap div
@@ -102,9 +112,9 @@ header {
 
 // footer styles
 .footer-bar {
-	border-top: 10px solid $yellow;
 	color: $grey;
-	padding: 30px 20px;
+	padding: 30px 20px 0;
+	font-size: .8em;
 
 	h2, h4 {
 		&, a {
@@ -144,5 +154,6 @@ header {
 	font-size: .8em;
 	line-height: 1.3em;
 	text-align: left;
+	color: lighten( $grey, 10% );
 }
 
