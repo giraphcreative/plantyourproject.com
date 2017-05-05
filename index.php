@@ -99,7 +99,7 @@
 				</div>
 
 				<div class="fine-print group">
-					*APR = Annual Percentage Rate. Rates as low as 1.99% after 15% discount. Actual rate and repayment terms you receive are based on your individual credit score and history and may be higher than 1.99% APR. Offer ends December 31, 2016. Offer may not be combined with any other offer and applies to new credit union loans only. 15% off refers to 15% off your new or used auto loan rate. Rate reduction pending approval and proof of rate may be required. Loans currently financed with the credit union are not eligible for promotion. Membership eligibility is required.Calculator based on best scenario. Your savings may be different on your unique situation and creditworthiness.  This credit union is federally insured by the National Credit Union Administration.
+					*APR = Annual Percentage Rate. Rate as of March 1, 2017. As low as prime rate on December 1, 2016 minus 1/2%. Rates are adjusted semi-annually and are based on the prime rate as of June 1st and December 1st of each year. Closing costs waived include appraisal, title search, flood certification, recording fees. Savings based on $25,000 borrowed at 3.25% APR compared to 5.0% (Bankrate.com) financed over 15 years. To win $250 NO PURCHASE NECESSARY. Automatic entry with loan closing plus photo submission on PlantYourProject.com. You may send a 3 x 5" card with name, address, and phone number addressed to Plant Your Project Give-away, 1645 Webster Street, Dayton, OH 45404. Winner will be drawn on or before June 15, 2017 and will be notified by phone. Membership eligibility required. This credit union is federally insured by the National Credit Union Administration. Equal Housing Lender.
 				</div>
 
 			</div>
